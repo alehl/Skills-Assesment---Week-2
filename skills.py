@@ -152,12 +152,9 @@ def translate_to_pirate_talk(phrase):
     'professor': 'foul blaggart', 'restaurant': 'galley', 'your': 'yer', 'excuse': 'arr', 'students': 'swabbies',
     'are': 'be', 'restroom': 'head', 'my': 'me', 'is': 'be'}
 
-    for keys in phrase:
-        english_text = keys
-        pirate_text = values
-        english_to_pirate_dictionary.get(keys, 0)
-        translations = string.replace(english_text, pirate_text)
-    return translations
+    # for keys in phrase:
+    #     phrase.replace(keys, values) 
+    #     print phrase
 
 
 def sort_by_word_length(words):
@@ -173,8 +170,11 @@ def sort_by_word_length(words):
         [(1, ['a']), (2, ['ok', 'an']), (3, ['day']), (5, ['apple'])]
 
     """
+    # for word in words:
+    #     length_of_words = len(words)
+    #     organized_words = words.sort()
+    #     print [(length_of_words, organized_words)]
 
-    return []
 
 
 def get_sum_zero_pairs(input_list):
@@ -205,9 +205,9 @@ def get_sum_zero_pairs(input_list):
         [[-2, 2], [-1, 1], [0, 0]]
 
     """
-    # for numbers in input_list:
-    #     tuples_from_list = 
-    # return []
+
+    return []
+
 
 
 ##############################################################################
