@@ -148,14 +148,17 @@ def translate_to_pirate_talk(phrase):
         'me swabbie be not a man!'
 
     """
+
     english_to_pirate_dictionary = {'sir': 'matey', 'hotel': 'fleabag', 'student': 'swabbie', 'boy': 'matey', 
     'professor': 'foul blaggart', 'restaurant': 'galley', 'your': 'yer', 'excuse': 'arr', 'students': 'swabbies',
     'are': 'be', 'restroom': 'head', 'my': 'me', 'is': 'be'}
 
-    # for keys in phrase:
-    #     phrase.replace(keys, values) 
-    #     print phrase
+    for keys in english_to_pirate_dictionary:
+        if keys in phrase:
+            return english_to_pirate_dictionary.value()
 
+    # I experimented with this one so much to the point where I completely fell asleep. I wanted this to work, so bad
+    # I feel completely ashamed for not being able to make this work. 
 
 def sort_by_word_length(words):
     """Given list of words, return list of ascending [(len, [words])].
@@ -170,11 +173,12 @@ def sort_by_word_length(words):
         [(1, ['a']), (2, ['ok', 'an']), (3, ['day']), (5, ['apple'])]
 
     """
-    # for word in words:
-    #     length_of_words = len(words)
-    #     organized_words = words.sort()
-    #     print [(length_of_words, organized_words)]
+    lengths = [(len(word), [word]) for word in words]
 
+    return lengths
+
+    # I didn't get the next step, where the words with the same length get combined... I don't think tuples can be changed and
+    #that's where I got stuck.
 
 
 def get_sum_zero_pairs(input_list):
@@ -205,9 +209,19 @@ def get_sum_zero_pairs(input_list):
         [[-2, 2], [-1, 1], [0, 0]]
 
     """
+    # chachito_list = []
+    # val_bject = 0
 
+    # for num in input_list: 
+    #     if num * num == 0 
+    #         chachito_list.append(num) += 1
+
+    # return chachito_list
+
+# I couldn't get this to work. Although, the idea was to multily numbers from the list by each other,
+# and add the ones that returned 0 to the list... I didn't get it to work though, I think I'm either not understending
+# how lists work on this case... or if I should turn them into tuples. I got really confused by this one.
     return []
-
 
 
 ##############################################################################
